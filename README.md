@@ -1,6 +1,6 @@
 # Codes for the [VNC Matching Challenge](https://codex.flywire.ai/app/vnc_matching_challenge)
 
-This repo contains the Team CIBR's solution for the VNC Challenge (members: Xin Zheng, Zuoyu Zhang, and Tatsuo Okubo). The [competition](https://codex.flywire.ai/app/vnc_matching_challenge) was organized by the FlyWire team at Princeton University, and we thank the organizers for this opportunity. 
+This repo contains the Team CIBR's solution for the VNC Challenge (members: Xin Zheng, Zuoyu Zhang, and Tatsuo Okubo at [Chinese Institute for Brain Research, Beijing](https://cibr.ac.cn/)). The [competition](https://codex.flywire.ai/app/vnc_matching_challenge) was organized by the FlyWire team at Princeton University, and we thank the organizers for this opportunity. 
 
 ## Access the data
 To access the data, visit the [competition website](https://codex.flywire.ai/app/vnc_matching_challenge) and download the following:
@@ -9,14 +9,13 @@ To access the data, visit the [competition website](https://codex.flywire.ai/app
 
 After downloading, please rename the columns labeled 'To Node Id' in both connectome files to 'To Node ID'. Place the connectome files in the `data/` directory and the benchmark solution in the `sol/` directory. 
 
-## Project structure
-- `sol/`: contains solutions
-- `notebook/`: contains Jupyter notebooks that illustrate the algorithms step by step
+## Files in the repository
 - `random_swap_auto_detect.jl`: script for edge-based random swap
 - `greedy_search_random.jl`: script for greedy refinement on male nodes
 - `MatchingFunctions.jl`: utility functions for matching mapped nodes and calculating scores
 - `Manifest.toml`: Julia environment file
 - `Project.toml`: Julia package dependencies
+- `sol_5816444.csv`: contains our solution with the score 5816444
 
 ## Julia version
 This code is intended to run with `Julia 1.10.7`. Ensure that your Julia environment is set up accordingly to avoid compatibility issues.
